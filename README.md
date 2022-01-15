@@ -16,6 +16,12 @@ A Spring Boot web application that allows you to add, delete, read, and update e
 * MySQL
 * Intellij
 
+### 
 <p align="center">
-  <img src="EMS.JPG" />
+   <h3 align="center">List of Employees</h3>
+  <img src="src/main/resources/static/images/EMS.JPG" />
+     <h3 align="center">Add New Employee</h3>
+  <img src="src/main/resources/static/images/AddEmployee.JPG" />
+     <h3 align="center">Update Employee</h3>
+  <img src="src/main/resources/static/images/UpdateEmployee.JPG" />
 </p>
