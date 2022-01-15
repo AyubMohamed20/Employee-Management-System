@@ -15,25 +15,24 @@
 
 <div class="container">
     <br>
-    <div class="p-3 mb-2 bg-info text-white">
+    <div class="p-3 bg-danger text-white">
         <div class="row">
-            <h3 class="font-weight-bold ml-3">Employee Management System</h3>
-            <a th:href="@{/security/logout}" class="btn btn-info my-sm-0 mr-4 ml-auto font-weight-bold" style="float: right;">
-                Logout
-            </a>
+            <img src="CtLogo.png" alt="" class="" />
+            <h3 class="font-weight-bold ml-4 pt-4">
+                Canadian Tire
+                <h3 class="ml-5 pt-4">Employee Management System - Update Employee</h3>
+            </h3>
         </div>
     </div>
     <br>
-    <p class="h4 mb-4">Update Employee</p>
 
     <form action="/" th:action="@{/saveEmployee}"
           th:object="${employee}" method="POST">
-
         <input type="hidden" th:field="*{id}"/>
-        <input type="text" th:field="*{firstName}" class="form-control mb-4 col-4" placeholder="First Name" required="required">
-        <input type="text" th:field="*{lastName}" class="form-control mb-4 col-4" placeholder="Last Name" required="required">
-        <input type="text" th:field="*{jobTitle}" class="form-control mb-4 col-4" placeholder="Job Title" required="required">
-        <select th:field="*{department}" class="form-control mb-4 col-4 placeholder-select" required="required">
+        <input type="text" th:field="*{firstName}" class="form-control mb-4 col-12" placeholder="First Name" required="required">
+        <input type="text" th:field="*{lastName}" class="form-control mb-4 col-12" placeholder="Last Name" required="required">
+        <input type="text" th:field="*{jobTitle}" class="form-control mb-4 col-12" placeholder="Job Title" required="required">
+        <select th:field="*{department}" class="form-control mb-4 col-12 placeholder-select" required="required">
             <option value="" selected="selected">Choose department..</option>
             <option value="Warehouse">Warehouse</option>
             <option value="Garden Center">Garden Center</option>
@@ -45,14 +44,16 @@
             <option value="Cash">Cash</option>
             <option value="Customer Service">Customer Service</option>
         </select>
-        <input type="text" th:field="*{email}" class="form-control mb-4 col-4" placeholder="Email" required="required">
-        <input type="text" th:field="*{phone}" class="form-control mb-4 col-4" placeholder="Phone Number" required="required">
-        <input type="date" th:field="*{dateOfBirth}" class="form-control mb-4 col-4" placeholder="Date of Birth" required="required">
+        <input type="text" th:field="*{email}" class="form-control mb-4 col-12" placeholder="Email" required="required">
+        <input type="text" th:field="*{phone}" class="form-control mb-4 col-12" placeholder="Phone Number" required="required">
+        <input type="date" th:field="*{dateOfBirth}" class="form-control mb-4 col-12" placeholder="Date of Birth" required="required">
 
-        <button type="submit" class="btn btn-info col-2">Save</button>
-        <a th:href="@{/}" class="btn btn-info col-2">Cancel</a>
+        <button type="submit" class="btn btn-success font-weight-bold col-4">Save</button>
+        <a th:href="@{/}" class="btn btn-danger font-weight-bold text-white col-4">Cancel</a>
 
     </form>
+
+
     <br>
     <br>
     <br>
